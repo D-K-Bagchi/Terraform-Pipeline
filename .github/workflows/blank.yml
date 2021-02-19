@@ -28,9 +28,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v2
-
-      - name: Installing Python
-        run: apt-get update && apt-get install -y python3-pip default-jre
         
       - name: Downloading AWS CLI
         run: wget "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip"
