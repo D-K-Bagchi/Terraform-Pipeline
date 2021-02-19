@@ -36,7 +36,8 @@ jobs:
         run: unzip awscli-exe-linux-x86_64.zip
         
       - name: changing directory
-        run: ./aws/install
+        #run: ./aws/install
+        run: pwd
         
       - name: checking aws version
         run: aws --version
